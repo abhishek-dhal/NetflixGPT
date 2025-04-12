@@ -10,7 +10,7 @@ import { auth } from "../utils/firebase";
 
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { USER_AVATAR } from "../utils/constants";
+import { BG, USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -115,7 +115,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src="/image/netflix_login_bg.jpg" alt="netflix-bg" />
+        <img src={BG} alt="netflix-bg" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
