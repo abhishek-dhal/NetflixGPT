@@ -7,6 +7,8 @@ const VideoBackground = ({ movieId }) => {
     const trailerVideo = useSelector(store => store.movies?.trailerVideo);
 
     useMovieTrailer(movieId);
+
+    // ?&autoplay=1&mute=1
    
   return (
     <div className="w-screen">
